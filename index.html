@@ -5,23 +5,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&family=Magra:wght@700&family=Montserrat:ital,wght@0,300;1,600&family=Red+Hat+Text&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/sass/style.css">
+    <title>Travel</title>
 </head>
 
 <body>
     <header class="header">
         <div class="wrapper">
-            <a href="#" class="logo">Travel portal</a>
-            <nav class="header__navigation">
-                <ul class="navigation">
-                    <li>How It Works</li>
-                    <li>Plan your Trip</li>
-                    <li>Destinatios</li>
-                    <li>Travel Stories</li>
-                </ul>
-            </nav>
-            <div class="header__button">
-                <button class="button">Log In</button>
+            <div class="layout-3-col">
+                <a href="#" class="logo">
+                    <object type="image/svg+xml" data="/assets/svg/globe.svg" class="logo-object">
+                        Your browser does not support SVG
+                    </object>
+                    Travel portal
+                </a>
+                <nav class="header__navigation">
+                    <ul class ="navigation layout-3-col">
+                        <li>How It Works</li>
+                        <li>Plan your Trip</li>
+                        <li>Destinatios</li>
+                        <li>Travel Stories</li>
+                    </ul>
+                </nav>
+                <div class="header__button">
+                    <button class="button">Log In</button>
+                </div>
             </div>
         </div>
     </header>
@@ -31,7 +46,7 @@
                 <h1>Explore the beauty of the World</h1>
                 <p>Receive personalized recommendations for countries, hotels, activities and more</p>
                 <div class="search-panel">
-                    <input class="input">
+                    <input class="input" placeholder="What would you like to do?">
                     <button class="button">Start Planning</button>
                 </div>
             </div>
