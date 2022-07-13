@@ -1,7 +1,10 @@
+@import "base/normalize";
 @import "base/base";
 @import "abstracts/constants.scss";
 @import "layout/wrapper";
 @import "layout/layout-3-col";
+@import "base/buttons";
+
 //components
 @import "components/header";
 @import "components/preview"
