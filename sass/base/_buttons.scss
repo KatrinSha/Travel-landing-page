@@ -1,29 +1,33 @@
 .button {
     background-color: $color-main-dark;
     color: $color-additional;
-    font-family: 'Red Hat Text';
+    @extend %font-family-add;
     font-style: normal;
     font-weight: 500;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.3s;
+    @extend %transition;
+
+    &:hover {
+        background-color: $color-additional;
+        color: black;
+    }
 }
 
-.button:hover {
-    background-color: $color-additional;
-    color: black;
-}
+
 
 .header__button {
-    padding: 10px 30px;
-    font-size: 16px;
+    padding: 10px 31px;
+    font-size: 1.5rem;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    line-height: 21px;
+    letter-spacing:0.1rem ;
 }
 
 .input__button {
     padding: 14px 33px;
-    font-size: 24px;
-
-
+    font-size: 2.4rem;
+    letter-spacing:0.06rem ;
+    line-height: 32px
 }

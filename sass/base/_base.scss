@@ -3,56 +3,33 @@ html {
 }
 
 body {
-  font-size: 2.4rem;
-  font-family: 'Red Hat Text';
-  font-style: normal;
-  font-weight: 500;
+  @extend %font-family-add;
+  @include font(2.4rem, 500);
+  color: $color-main-light;
+  font-family: 'Aleo', serif;
 
 }
 
 h1 {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 80px;
+  @include font(8rem, 700);
   color: white;
-  line-height: 96px;
-  
- 
-
+  line-height: 9.6rem;
 }
 
 h2 {
-  font-family: 'Red Hat Text';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 40px;
-
+  @extend %font-family-add;
+  @include font(4rem, 500);
 }
 
 h3 {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 35px;
- 
-
+  @include font(3.5rem, 400);
 }
 
 h4 {
-  font-family: 'Aleo';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
- 
+  @include font(2rem, 400);
 }
 
 p {
-  font-family: 'Aleo';
-  font-style:italic;
-  font-weight: 700;
-  font-size: 20px; 
   color: white;
-
- 
+  @include font(2rem, 700, italic);
 }

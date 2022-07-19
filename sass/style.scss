@@ -1,10 +1,19 @@
+@import "abstracts/mixins";
+@import "abstracts/constants";
+@import "abstracts/sample";
+
+//base
 @import "base/normalize";
 @import "base/base";
-@import "abstracts/constants.scss";
+@import "base/buttons";
+@import "base/_logo";
+
+//layout
 @import "layout/wrapper";
 @import "layout/layout-3-col";
-@import "base/buttons";
 
 //components
 @import "components/header";
-@import "components/preview"
+@import "components/preview";
+@import "components/navigation";
+@import "components/_steps";

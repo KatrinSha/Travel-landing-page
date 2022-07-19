@@ -1,13 +1,12 @@
 .preview__content {
-    padding: 32px 308px 321px 0px;
+    padding: 32px 308px 253px 0px;
+    & p {
+        padding-bottom: 47px;
+    }
 }
 
 h1 {
-    padding-bottom: 32px;
-}
-
-.preview__content p {
-    padding-bottom: 49px;
+    padding-bottom: 34px;
 }
 
 .search-panel {
@@ -20,17 +19,12 @@ h1 {
 }
 
 ::placeholder {
-    font-family: 'Aleo';
-    font-style: italic;
-    font-weight: 400;
-    font-size: 25px;
+    @include font(2.5rem, 400, italic);
+    color: $color-main-light;
+}
 
-    color: $color-main-light;}
-
-.input{
+.input {
     flex: auto;
     background-color: transparent;
     font-size: x-large;
-   
 }
-

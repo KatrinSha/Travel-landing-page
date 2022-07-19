@@ -2,8 +2,6 @@
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     padding: 25px 0;
-
-
 }
 
 .header__wrapper {
@@ -18,23 +16,7 @@
     background: url('/assets/img/Lake_header_max.jpg') top no-repeat;
 }
 
-.navigation {
 
-    display: flex;
-    justify-content: space-between;
-}
-
-.navigation__link {
-    font-family: 'Red Hat Text';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    color: $color-additional;
-    padding-right: 42px;
-   
-  
- 
-}
 
 .logo {
     font-family: 'Magra';
@@ -45,4 +27,5 @@
     text-decoration: none;
     color: $color-additional;
     padding-right: 13px;
+
 }

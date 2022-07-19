@@ -1,3 +1,15 @@
+/*font-family: 'Aleo', serif;
+font-family: 'Magra', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Red Hat Text', sans-serif;*/
+.navigation__link:hover, .button {
+  transition: all 0.5s ease 0s;
+}
+
+.button, h2, body {
+  font-family: "Red Hat Text ", sans-serif;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -93,53 +105,78 @@ html {
 
 body {
   font-size: 2.4rem;
-  font-family: "Red Hat Text";
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+  color: #F2785C;
+  font-family: "Aleo", serif;
 }
 
 h1 {
-  font-family: "Aleo";
-  font-style: normal;
+  font-size: 8rem;
   font-weight: 700;
-  font-size: 80px;
+  font-style: normal;
   color: white;
-  line-height: 96px;
+  line-height: 9.6rem;
 }
 
 h2 {
-  font-family: "Red Hat Text";
-  font-style: normal;
+  font-size: 4rem;
   font-weight: 500;
-  font-size: 40px;
+  font-style: normal;
 }
 
 h3 {
-  font-family: "Aleo";
-  font-style: normal;
+  font-size: 3.5rem;
   font-weight: 400;
-  font-size: 35px;
+  font-style: normal;
 }
 
 h4 {
-  font-family: "Aleo";
-  font-style: normal;
+  font-size: 2rem;
   font-weight: 400;
-  font-size: 20px;
+  font-style: normal;
 }
 
 p {
-  font-family: "Aleo";
-  font-style: italic;
-  font-weight: 700;
-  font-size: 20px;
   color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: italic;
 }
 
-/*font-family: 'Aleo', serif;
-font-family: 'Magra', sans-serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Red Hat Text', sans-serif;*/
+.button {
+  background-color: #0D606F;
+  color: #fff;
+  font-style: normal;
+  font-weight: 500;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.header__button {
+  padding: 10px 31px;
+  font-size: 1.5rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  line-height: 21px;
+  letter-spacing: 0.1rem;
+}
+
+.input__button {
+  padding: 14px 33px;
+  font-size: 2.4rem;
+  letter-spacing: 0.06rem;
+  line-height: 32px;
+}
+
+.logo-svg:hover .logo-path {
+  fill: #0D606F;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: auto;
@@ -150,32 +187,9 @@ font-family: 'Red Hat Text', sans-serif;*/
   justify-content: space-between;
 }
 
-.button {
-  background-color: #0D606F;
-  color: #fff;
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.3s;
-}
-
-.button:hover {
-  background-color: #fff;
-  color: black;
-}
-
-.header__button {
-  padding: 10px 30px;
-  font-size: 16px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-}
-
-.input__button {
-  padding: 14px 33px;
-  font-size: 24px;
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header {
@@ -196,20 +210,6 @@ font-family: 'Red Hat Text', sans-serif;*/
   background: url("/assets/img/Lake_header_max.jpg") top no-repeat;
 }
 
-.navigation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.navigation__link {
-  font-family: "Red Hat Text";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  color: #fff;
-  padding-right: 42px;
-}
-
 .logo {
   font-family: "Magra";
   font-style: normal;
@@ -222,15 +222,14 @@ font-family: 'Red Hat Text', sans-serif;*/
 }
 
 .preview__content {
-  padding: 32px 308px 321px 0px;
+  padding: 32px 308px 253px 0px;
+}
+.preview__content p {
+  padding-bottom: 47px;
 }
 
 h1 {
-  padding-bottom: 32px;
-}
-
-.preview__content p {
-  padding-bottom: 49px;
+  padding-bottom: 34px;
 }
 
 .search-panel {
@@ -242,10 +241,9 @@ h1 {
 }
 
 ::placeholder {
-  font-family: "Aleo";
-  font-style: italic;
+  font-size: 2.5rem;
   font-weight: 400;
-  font-size: 25px;
+  font-style: italic;
   color: #F2785C;
 }
 
@@ -253,6 +251,70 @@ h1 {
   flex: auto;
   background-color: transparent;
   font-size: x-large;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__link {
+  font-family: "Red Hat Text";
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+  color: #fff;
+  padding-right: 42px;
+}
+.navigation__link:hover {
+  cursor: pointer;
+  color: #0D606F;
+}
+
+h2 {
+  padding: 82px 0 38px 0;
+  text-align: center;
+  line-height: 53px;
+}
+
+.tool__icon {
+  width: 317px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.tool__icon h4 {
+  color: #0D606F;
+}
+
+.icon_block {
+  background-color: #F2785C;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.icon-bicycle {
+  background-image: url("/assets/svg/bicycle.svg");
+  width: 50px;
+  height: 45px;
+}
+
+.icon-calendar {
+  background-image: url("/assets/svg/calendar.svg");
+  width: 52px;
+  height: 52px;
+}
+
+.icon-plane {
+  background-image: url("/assets/svg/plane.svg");
+  width: 60px;
+  height: 45px;
 }
 
 /*# sourceMappingURL=style.css.map */
