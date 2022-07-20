@@ -1,0 +1,41 @@
+
+.icon-bicycle {
+    background-image: url("/assets/svg/bicycle.svg");
+    width: 50px;
+    height: 45px;
+}
+.icon-calendar {
+    background-image: url("/assets/svg/calendar.svg");
+    width: 52px;
+    height: 52px;
+}
+.icon-plane {
+    background-image: url("/assets/svg/plane.svg");
+    width: 60px;
+    height: 45px;
+}
+
+.ico_arrow {
+    background-image: url("/assets/svg/arrow.svg");
+    width: 35px;
+    height: 22.5px;
+}
+.ico_inst{
+    background-image: url("/assets/svg/inst.svg");
+    width: 30.85px;
+    height: 30.85px;
+}
+.ico_ytoub{
+    background-image: url("/assets/svg/ytoub.svg");
+     width: 33.65px;
+    height: 26.65px;
+}
+.ico_twi{
+    background-image: url("/assets/svg/twitter.svg");
+    width: 31.84px;
+    height: 25.88px;  
+}
+.ico {
+    cursor: pointer;
+    display: inline-block;
+}

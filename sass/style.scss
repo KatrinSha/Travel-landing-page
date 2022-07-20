@@ -6,7 +6,8 @@
 @import "base/normalize";
 @import "base/base";
 @import "base/buttons";
-@import "base/_logo";
+@import "base/logo";
+@import "base/icon";
 
 //layout
 @import "layout/wrapper";
@@ -16,4 +17,7 @@
 @import "components/header";
 @import "components/preview";
 @import "components/navigation";
-@import "components/_steps";
+@import "components/steps";
+@import "components/destinations";
+@import "components/stories";
+@import "components/footer";

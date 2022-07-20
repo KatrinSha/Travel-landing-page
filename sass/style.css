@@ -6,7 +6,7 @@ font-family: 'Red Hat Text', sans-serif;*/
   transition: all 0.5s ease 0s;
 }
 
-.button, h2, body {
+.footer__text, .slider__item-text, .button, h2, body {
   font-family: "Red Hat Text ", sans-serif;
 }
 
@@ -149,12 +149,11 @@ p {
   color: #fff;
   font-style: normal;
   font-weight: 500;
-  border: none;
   border-radius: 10px;
   cursor: pointer;
 }
 .button:hover {
-  background-color: #fff;
+  background-color: rgba(13, 96, 111, 0.5);
   color: black;
 }
 
@@ -173,8 +172,66 @@ p {
   line-height: 32px;
 }
 
+.button__link {
+  display: flex;
+  justify-content: center;
+}
+
+.link-button {
+  padding: 18px 35px 18px 36px;
+  display: inline-flex;
+  justify-content: space-between;
+}
+
 .logo-svg:hover .logo-path {
   fill: #0D606F;
+}
+
+.icon-bicycle {
+  background-image: url("/assets/svg/bicycle.svg");
+  width: 50px;
+  height: 45px;
+}
+
+.icon-calendar {
+  background-image: url("/assets/svg/calendar.svg");
+  width: 52px;
+  height: 52px;
+}
+
+.icon-plane {
+  background-image: url("/assets/svg/plane.svg");
+  width: 60px;
+  height: 45px;
+}
+
+.ico_arrow {
+  background-image: url("/assets/svg/arrow.svg");
+  width: 35px;
+  height: 22.5px;
+}
+
+.ico_inst {
+  background-image: url("/assets/svg/inst.svg");
+  width: 30.85px;
+  height: 30.85px;
+}
+
+.ico_ytoub {
+  background-image: url("/assets/svg/ytoub.svg");
+  width: 33.65px;
+  height: 26.65px;
+}
+
+.ico_twi {
+  background-image: url("/assets/svg/twitter.svg");
+  width: 31.84px;
+  height: 25.88px;
+}
+
+.ico {
+  cursor: pointer;
+  display: inline-block;
 }
 
 .wrapper {
@@ -204,7 +261,7 @@ p {
   align-items: center;
 }
 
-.background {
+.background-header {
   margin: 0 auto;
   max-width: 1440px;
   background: url("/assets/img/Lake_header_max.jpg") top no-repeat;
@@ -271,7 +328,7 @@ h1 {
   color: #0D606F;
 }
 
-h2 {
+.steps h2 {
   padding: 82px 0 38px 0;
   text-align: center;
   line-height: 53px;
@@ -299,22 +356,148 @@ h2 {
   margin-bottom: 32px;
 }
 
-.icon-bicycle {
-  background-image: url("/assets/svg/bicycle.svg");
-  width: 50px;
-  height: 45px;
+.destinations h2 {
+  padding: 108px 0 51px 0;
+  text-align: center;
 }
 
-.icon-calendar {
-  background-image: url("/assets/svg/calendar.svg");
-  width: 52px;
-  height: 52px;
+.slider {
+  max-width: 1440px;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-.icon-plane {
-  background-image: url("/assets/svg/plane.svg");
-  width: 60px;
-  height: 45px;
+.slider__item img {
+  border-radius: 16px;
+  width: 800px;
+  height: 800px;
+}
+
+.item_selected {
+  margin: 0 60px;
+}
+
+.slider-line {
+  width: 2520px;
+  height: 800px;
+  display: flex;
+  position: relative;
+  left: -540px;
+}
+
+.slider__item-text {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-style: normal;
+  position: relative;
+  top: -77px;
+  left: 19px;
+}
+
+.slider-indicators {
+  padding: 24px 0 40px 0;
+  border: 3px splid navy;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicators {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: rgba(242, 120, 92, 0.5);
+}
+.indicators_selected {
+  background-color: #F2785C;
+}
+
+.link-button__text {
+  padding-left: 13px;
+}
+
+.destinations {
+  padding-bottom: 80px;
+}
+
+.stories__title {
+  text-align: center;
+  position: relative;
+  top: -85px;
+  margin-top: 91px;
+}
+
+.story-title {
+  color: #0D606F;
+  padding: 5px 0 26px;
+}
+
+.stories {
+  background: rgba(255, 255, 255, 0.7);
+  padding-bottom: 42px;
+}
+
+.stories__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 39px;
+}
+
+.layout-2-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.layout-2-columns img {
+  display: block;
+  width: 400px;
+  border-radius: 16px;
+  margin-right: 40px;
+  filter: drop-shadow(0px 4px 4px #0D606F);
+}
+
+.story-text {
+  color: #0D606F;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 24px;
+}
+
+._read-more-link {
+  color: #0D606F;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+.background-footer {
+  background: url("/assets/img/Lake footer max.jpg") top no-repeat;
+}
+
+.footer {
+  padding: 12px 0;
+}
+
+.layot-2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+  padding: 0px 337px 0px 0;
+}
+
+.footer-navigation__links {
+  width: 141px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

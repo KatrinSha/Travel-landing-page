@@ -4,13 +4,12 @@
     @extend %font-family-add;
     font-style: normal;
     font-weight: 500;
-    border: none;
     border-radius: 10px;
     cursor: pointer;
     @extend %transition;
 
     &:hover {
-        background-color: $color-additional;
+        background-color:rgba(13, 96, 111, 0.5);;
         color: black;
     }
 }
@@ -31,3 +30,14 @@
     letter-spacing:0.06rem ;
     line-height: 32px
 }
+.button__link {
+    display: flex;
+    justify-content: center;
+}
+
+.link-button {
+    padding: 18px 35px 18px 36px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+

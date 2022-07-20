@@ -1,0 +1,65 @@
+.destinations h2 {
+    padding: 108px 0 51px 0;
+    text-align: center;
+}
+
+.slider {
+    max-width: $desktop-width;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider__item img {
+    border-radius: 16px;
+    width: 800px;
+    height: 800px;
+
+}
+
+.item_selected {
+    margin: 0 60px;
+}
+
+.slider-line {
+    width: 2520px;
+    height: 800px;
+    display: flex;
+    position: relative;
+    left: -540px;
+}
+
+.slider__item-text {
+    @extend %font-family-add;
+    @include font(3.2rem, 500);
+    position: relative;
+    top: -77px;
+    left: 19px
+}
+
+.slider-indicators {
+    padding: 24px 0 40px 0;
+    border: 3px splid navy;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.indicators {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: rgba(242, 120, 92, 0.5);
+
+    &_selected {
+        background-color: $color-main-light;
+    }
+}
+
+
+
+
+.link-button__text {
+    padding-left: 13px;
+}
+.destinations{padding-bottom: 80px;}
