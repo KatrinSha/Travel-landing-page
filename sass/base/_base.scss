@@ -14,6 +14,15 @@ h1 {
   @include font(8rem, 700);
   color: white;
   line-height: 9.6rem;
+
+  @include font-adaptiv_1200-391 {
+    line-height: calc(2rem + 5vw);
+    font-size: calc(2rem + 5vw);
+  }
+  @include media-mobilesmall_burger{
+     display: none;
+  }
+ 
 }
 
 h2 {

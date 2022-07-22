@@ -1,14 +1,53 @@
-@mixin font($size, $weight, $style:normal) {
+@mixin font($size, $weight, $style: normal) {
     font-size: $size;
     font-weight: $weight;
     font-style: $style;
-  
+
 }
-@mixin columns ($width){
+
+@mixin columns ($width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    >*{
+
+    >* {
         flex-basis: $width;
+    }
+}
+
+@mixin media-laptop {
+    @media (max-width: $content-width) {
+        @content;
+    }
+}
+
+@mixin media-tablet {
+    @media (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin media-mobile {
+    @media (max-width: $mobile-big-width) {
+        @content;
+    }
+}
+
+@mixin media-mobilesmall {
+    @media (max-width: $mobile-small-width) {
+        @content;
+    }
+}
+
+
+@mixin media-mobilesmall_burger {
+    @media (max-width: $mobile-small-width-for_burger) {
+        @content;
+    }
+}
+
+@mixin font-adaptiv_1200-391 {
+    @media (min-width: 391px) and (max-width: $content-width) {
+        @content;
     }
 }

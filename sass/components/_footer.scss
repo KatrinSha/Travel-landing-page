@@ -1,5 +1,5 @@
 .background-footer{
-    background: url("/assets/img/Lake footer max.jpg") top no-repeat;
+    background: url("/assets/img/Lake footer max.jpg") bottom no-repeat;
   
 }
 .footer{
@@ -11,20 +11,15 @@
 }
 
 .footer__text{
-
     @extend %font-family-add;
     @include font(1.6rem, 500);
-
     padding:0px 337px 0px 0 ;
 }
 .footer-navigation__links{
     width: 141px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   @extend %flex_sp-betw_center;
  
 }
 
    
-  
 

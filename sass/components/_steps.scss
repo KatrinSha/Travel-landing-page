@@ -8,10 +8,11 @@
 
 .tool__icon {
     width: 317px;
-    display: flex;
+    flex-grow: 1;
+    @extend %flex_sp-betw_center; 
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
 
     & h4 {
         color: $color-main-dark;

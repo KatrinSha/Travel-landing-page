@@ -1,5 +1,24 @@
+body{
+    flex: 1 1 auto;
+}
+
 .wrapper{
     max-width: $content-width;
     margin: auto;
 }
 
+.adaptiv__wrapper{
+    @include media-laptop{
+        padding: 0 20px;
+    }
+}
+
+
+/*
+.general-wrapper {
+
+overflow: hidden;
+display: flex;
+flex-direction: column;
+min-height: 100%;
+}*/

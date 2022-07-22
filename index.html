@@ -9,19 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link <link
+    <link 
         href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
-
 
     <link rel="stylesheet" href="/sass/style.css">
     <title>Travel</title>
 </head>
 
 <body>
+    <div class="general-wrapper">
     <div class="background-header">
         <header class="header">
-            <div class="wrapper header__wrapper">
+            <div class="wrapper header__wrapper adaptiv__wrapper">
+
                 <a href="#" class="logo">
                     <object type="image/svg+xml" data="/assets/svg/globe.svg" class="logo-object">
                         Your browser does not support SVG
@@ -36,7 +37,19 @@
                         <li class="navigation__link">Travel Stories</li>
                     </ul>
                 </nav>
-
+                <div class="burger-menu ">
+                    <a href="" class="burger-menu_button">
+                        <spun class="burger-menu_lines"></spun>
+                    </a>
+                    <ul class="burger-menu__nav show">
+                        <li class="nav__link"><a href="#"></a>How It Works</a></li>
+                        <li class="nav__link"><a href="#"></a>Plan Your Trip</a></li>
+                        <li class="nav__link"><a href="#"></a>Destinations</a></li>
+                        <li class="nav__link"><a href="#"></a>Travel Stories</a></li>
+                        <li class="nav__link"><a href="#"></a>Account</a></li>
+                        <li class="nav__link"><a href="#"></a>Social Media</a></li>
+                    </ul>
+                </div>
                 <button class="button header__button">Login</button>
 
             </div>
@@ -55,7 +68,7 @@
         </section>
     </div>
     <section class="steps">
-        <div class="wrapper">
+        <div class="wrapper adaptiv__wrapper">
             <h2>3 STEPS TO THE PERFECT TRIP</h2>
             <div class="layout-3-column">
 
@@ -99,7 +112,7 @@
                     <div class="indicators"></div>
                 </div>
                 <div class="button__link">
-                    <a href="#" class="button link-button ">
+                    <a href="#" class="button button__link-container ">
                         <span class="ico ico_arrow"></span>
                         <span class="link-button__text">Find More</span>
                     </a>
@@ -109,7 +122,7 @@
     </section>
     <div class="background-footer">
         <section class="stories">
-            <div class="wrapper">
+            <div class="wrapper adaptiv__wrapper">
                 <h2 class="stories__title">TRAVEL STORIES</h2>
 
                 <div class="stories__list">
@@ -191,7 +204,7 @@
                     
               
                 <div class="button__link">
-                    <a href="#" class="button link-button ">
+                    <a href="#" class="button button__link-container ">
                         <span class="ico ico_arrow"></span>
                         <span class="link-button__text">See More</span>
                     </a>
@@ -199,7 +212,7 @@
             </div>
         </section>
         <footer class="footer">
-           <div class="wrapper">
+           <div class="wrapper adaptiv__wrapper">
                 <div class="layot-2">
                     <p class="footer__text">All Rights Reserved © Travel Portal</p>
                     
@@ -218,6 +231,7 @@
           </div>
         </footer>
     </div>
+</div>
 </body>
 
 </html>
