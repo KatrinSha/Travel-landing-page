@@ -9,7 +9,7 @@
     @extend %transition;
 
     &:hover {
-        background-color:rgba(13, 96, 111, 0.5);;
+        background-color:rgba(32, 48, 25, 0.5);;
         color: black;
     }
 }
@@ -31,7 +31,12 @@
     padding: 14px 33px;
     font-size: 2.4rem;
     letter-spacing:0.06rem ;
-    line-height: 32px
+    line-height: 32px;
+     @include media-tablet {
+        padding:7.5px 8px;
+        line-height: 15px;
+        @include font(1.1rem, 500);
+    }
 }
 .button__link {
     display: flex;
@@ -42,5 +47,103 @@
     padding: 18px 35px 18px 36px;
     display: flex;
     justify-content: space-between;
+    @include media-tablet{
+        padding:18px 18px 18px 41px;
+   
+
+    }
 }
 
+
+.burger-menu_button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 20px;
+    z-index: 10;
+    left: calc(100vw - 70px);
+    display: none;
+
+    @include media-tablet {
+        display: block;
+    }
+
+    @include media-mobilesmall_burger {
+        width: 26.25px;
+        height: 26.25px;
+        top: 46px;
+        left: calc(100vw - 50.38px);
+    }
+}
+
+
+
+.burger-menu_lines:before,
+.burger-menu_lines:after,
+.burger-menu_lines {
+    position: absolute;
+    width: 100%;
+    height: 2.67px;
+    background-color: $color-additional;
+    transition: all 0.3s ease 0s;
+
+}
+
+.burger-menu_lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &:before {
+        content: '';
+        top: -6.67px;
+    }
+
+    &:after {
+        content: '';
+        top: 6.67px;
+    }
+}
+
+.burger-menu_lines.active {
+    @include media-mobilesmall_burger {
+        background-color: transparent;
+
+
+        &::before {
+            width: 20px;
+            height: 1.5px;
+            top: -36px;
+            left: -103px;
+
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            width: 20px;
+            height: 1.5px;
+            transform: rotate(-45deg);
+            top: -36px;
+            left: -103px;
+        }
+    }
+      @include font-adaptiv_391-767 {
+        background-color: transparent;
+
+        &::before {
+            width: 20px;
+            height: 1.5px;
+            top: -19px;
+            left: -79px;
+            transform: rotate(45deg);
+        }
+
+        &::after {
+            width: 20px;
+            height: 1.5px;
+            transform: rotate(-45deg);
+            top: -19px;
+            left: -79px;
+        }
+    }
+}

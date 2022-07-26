@@ -11,8 +11,11 @@ body{
     @include media-laptop{
         padding: 0 20px;
     }
-}
 
+@include media-mobilesmall_burger{
+    padding: 0 15px;
+}
+}
 
 /*
 .general-wrapper {

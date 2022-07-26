@@ -7,27 +7,43 @@
         padding: 32px 20px 253px 20px;
         text-align: center;
     }
+    @include media-mobilesmall_burger{
+        padding: 33px 15px 62px 15px;
+    }
 }
 
 h1 {
     padding-bottom: 34px;
 }
-
+.preview-text{
+    display: none;
+}
 .search-panel {
     @extend %flex_sp-betw_center;
     background: rgba(250, 250, 250, 0.7);
     border-radius: 16px;
     padding: 18px 19px 18px 41px;
+    @include media-tablet{
+        padding: 9px 9px 9px 16.55px;
+    }
 
 }
 
 ::placeholder {
     @include font(2.5rem, 400, italic);
     color: $color-main-light;
+    @include media-tablet{
+        @include font(1.4rem, 400, italic);
+    }
 }
 
 .input {
     flex: auto;
     background-color: transparent;
     font-size: x-large;
+    @include media-tablet{
+        flex:none;
+        font-size:small;
+    }
+
 }

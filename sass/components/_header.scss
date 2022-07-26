@@ -2,6 +2,12 @@
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
     padding: 25px 0;
+    @include media-mobilesmall_burger{
+      background: transparent;
+      box-shadow: 0px 0px 0px rgba(13, 96, 111, 0.0);
+      padding-top: 44px;
+    }
+
     
 }
 
@@ -13,6 +19,9 @@
     margin: 0 auto;
     max-width: $desktop-width;
     background: url('/assets/img/Lake_header_max.jpg') top no-repeat;
+    @include media-mobilesmall_burger{
+        background: url('/assets/img/Lake header min.jpg') top no-repeat;
+    }
 }
 
 
@@ -25,4 +34,9 @@
     color: $color-additional;
     padding-right: 13px;
 
+}
+.logo-text{
+    @include media-tablet{
+        display: none;
+    }
 }

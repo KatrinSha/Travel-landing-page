@@ -51,3 +51,8 @@
         @content;
     }
 }
+@mixin font-adaptiv_391-767 {
+    @media (min-width: 391px) and (max-width: $tablet-width) {
+        @content;
+    }
+}
