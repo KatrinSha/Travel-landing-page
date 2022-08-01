@@ -1,12 +1,26 @@
 .destinations h2 {
     padding: 108px 0 51px 0;
     text-align: center;
+
+    @include media-tablet {
+        font-size: 2.7rem;
+    }
+
+    @include media-mobilesmall_burger {
+        @include font(1.4rem, 500);
+        padding: 25px 0 24px 0;
+    }
 }
 
 .slider {
     max-width: $desktop-width;
     overflow: hidden;
     margin: 0 auto;
+
+    @include media-mobilesmall_burger {
+        max-width: 360px;
+    }
+
 }
 
 .slider__item img {
@@ -14,10 +28,26 @@
     width: 800px;
     height: 800px;
 
+    @include media-mobilesmall_burger {
+        display: none;
+    }
+
+}
+
+.slider__item {
+    @include media-mobilesmall_burger {
+        border-radius: 16px;
+        width: 360px;
+        height: 210px;
+    }
 }
 
 .item_selected {
     margin: 0 60px;
+
+    @include media-mobilesmall_burger {
+        margin: 0px;
+    }
 }
 
 .slider-line {
@@ -26,14 +56,33 @@
     display: flex;
     position: relative;
     left: -540px;
+
+    @include media-mobilesmall_burger {
+        width: 1080px;
+        height: 210px;
+        left: 0px;
+        transition: all ease 1s;
+    }
+
+    @include font-adaptiv_391-1440 {
+        $slider-width: calc((2520px - 100vw)/2*(-1));
+        left: $slider-width;
+    }
 }
+
 
 .slider__item-text {
     @extend %font-family-add;
     @include font(3.2rem, 500);
     position: relative;
     top: -77px;
-    left: 19px
+    left: 19px;
+
+    @include media-mobilesmall_burger {
+        font-size: 2rem;
+        top: 11px;
+        left: 15px;
+    }
 }
 
 .slider-indicators {
@@ -43,6 +92,12 @@
     justify-content: center;
     gap: 10px;
 
+    @include media-mobilesmall_burger {
+        position: relative;
+        padding: 0px;
+        gap: 6px;
+        top: -20px
+    }
 }
 
 .indicators {
@@ -51,15 +106,58 @@
     border-radius: 10px;
     background: rgba(242, 120, 92, 0.5);
 
-    &_selected {
-        background-color: $color-main-light;
+    @include media-mobilesmall_burger {
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
     }
 }
 
-
-
-
-.link-button__text {
-    padding-left: 13px;
+.indicators_selected{
+    background-color: $color-main-light;
 }
-.destinations{padding-bottom: 80px;}
+
+.destinations {
+    padding-bottom: 80px;
+
+    @include media-mobilesmall_burger {
+        padding-bottom: 10px;
+    }
+}
+.destinations {
+    position: relative;
+}
+.slader-arrow {
+    display: none;
+
+    @include media-mobilesmall_burger {
+       position: absolute;
+       left:26px;
+       top:153px;
+       z-index: 12;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       height: 30px;
+       width:337px;
+    }
+}
+.arrow{
+   height: 24.94px;
+   width: 14.36px;  
+
+}
+
+
+
+
+
+svg path {
+    fill: inherit;
+    stroke: inherit;
+    stroke-width: inherit;
+}
+
+.left-slide-arrow svg {
+    fill-opacity: 0.1;
+}

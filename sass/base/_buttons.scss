@@ -42,15 +42,23 @@
     display: flex;
     justify-content: center;
 }
+.link-button__text {
+    padding-left: 13px;
+    @include media-tablet{
+        padding-left: 3px;
+    }
+}
 
 .button__link-container {
     padding: 18px 35px 18px 36px;
     display: flex;
     justify-content: space-between;
-    @include media-tablet{
-        padding:18px 18px 18px 41px;
-   
 
+    
+    @include media-tablet{
+        justify-content: center;
+        padding:10px 17px 10px 15px;
+        font-size: 11px;
     }
 }
 
@@ -75,6 +83,8 @@
         left: calc(100vw - 50.38px);
     }
 }
+
+
 
 
 
@@ -108,7 +118,6 @@
 .burger-menu_lines.active {
     @include media-mobilesmall_burger {
         background-color: transparent;
-
 
         &::before {
             width: 20px;

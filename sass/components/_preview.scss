@@ -16,7 +16,8 @@ h1 {
     padding-bottom: 34px;
 }
 .preview-text{
-    display: none;
+    @include media-mobilesmall_burger{
+    display: none; }
 }
 .search-panel {
     @extend %flex_sp-betw_center;
@@ -45,5 +46,4 @@ h1 {
         flex:none;
         font-size:small;
     }
-
 }

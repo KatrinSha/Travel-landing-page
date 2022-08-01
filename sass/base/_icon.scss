@@ -3,22 +3,42 @@
     background-image: url("/assets/svg/bicycle.svg");
     width: 50px;
     height: 45px;
+    @include media-mobilesmall_burger{
+        background-image: url("/assets/svg/bicycle_min.svg");
+        width: 35px;
+        height: 31.5px;
+    }
 }
 .icon-calendar {
     background-image: url("/assets/svg/calendar.svg");
     width: 52px;
     height: 52px;
+    @include media-mobilesmall_burger{ 
+        background-image: url("/assets/svg/calendar_min.svg");
+        width: 35px;
+        height: 35px;
+    }
 }
 .icon-plane {
     background-image: url("/assets/svg/plane.svg");
     width: 60px;
     height: 45px;
+    @include media-mobilesmall_burger{ 
+        background-image: url("/assets/svg/plane_min.svg");
+        width: 40px;
+        height: 30px;
+    }
 }
 
 .ico_arrow {
     background-image: url("/assets/svg/arrow.svg");
     width: 35px;
     height: 22.5px;
+    @include media-tablet{
+        background-image: url("/assets/svg/bi_arrow-right.svg");
+        width: 10px;
+        height: 10px;
+    }
 }
 .ico_inst{
     background-image: url("/assets/svg/inst.svg");
@@ -38,4 +58,20 @@
 .ico {
     cursor: pointer;
     display: inline-block;
+}
+.arrow-left{
+    background-image: url("/assets/svg/left-slide.svg");
+    height: 24.94px;
+    width: 14.36px; 
+}
+.arrow-right{
+    background-image: url("/assets/svg/right-slide.svg");
+    height: 24.94px;
+    width: 14.36px;  
+}
+.arrow-left.disabled{
+    filter:  opacity(50%);
+}
+.arrow-right.disabled{
+    filter:  opacity(50%);
 }

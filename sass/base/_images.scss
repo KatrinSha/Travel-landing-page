@@ -1,0 +1,42 @@
+.img1 {
+    background: url("/assets/img/Lake story max.jpg") center center no-repeat;
+    @include media-mobile{
+        background: url("/assets/img/lake_story_min.jpg") center center no-repeat;
+    }
+}
+
+.img2 {
+    background: url("/assets/img/Road story max.jpg") center center no-repeat;
+    @include media-mobile{
+        background: url("/assets/img/Road_story_min.jpg") center center no-repeat;
+    }
+}
+
+.img3 {
+    background: url("/assets/img/Snow story max.jpg") center center no-repeat;
+    @include media-mobile{
+        background: url("/assets/img/snow_story_min.jpg") center center no-repeat;
+    }
+}
+
+.img4 {
+    background: url("/assets/img/Car_story_max.jpg") center center no-repeat;
+    @include media-mobile{
+        background: url("/assets/img/car_story_min.jpg") center center no-repeat;
+    }
+}
+.slider__item:nth-child(1){
+    @include media-mobilesmall_burger{
+        background: url("/assets/img/Stone\ mini.jpg") center center no-repeat;
+    }
+}
+.slider__item:nth-child(2){
+    @include media-mobilesmall_burger{
+        background: url("/assets/img/Gate min.jpg") center center no-repeat;
+    }
+}
+.slider__item:nth-child(3){
+    @include media-mobilesmall_burger{
+        background: url("/assets/img/Bridge min.jpg") center center no-repeat;
+    }
+}

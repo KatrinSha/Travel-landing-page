@@ -56,3 +56,14 @@
         @content;
     }
 }
+
+@mixin font-adaptiv_391-1440 {
+    @media (min-width: 391px) and (max-width: 1440px) {
+        @content;
+    }
+}
+@mixin font-adaptiv_391-945 {
+    @media (min-width: 391px) and (max-width: 945px) {
+        @content;
+    }
+}

@@ -19,10 +19,11 @@ h1 {
     line-height: calc(2rem + 5vw);
     font-size: calc(2rem + 5vw);
   }
-  @include media-mobilesmall_burger{
-     display: none;
+
+  @include media-mobilesmall_burger {
+    display: none;
   }
- 
+
 }
 
 h2 {
@@ -36,6 +37,14 @@ h3 {
 
 h4 {
   @include font(2rem, 400);
+
+  @include font-adaptiv_391-767 {
+    font-size: calc(0.61rem + 1.5vw);
+  }
+
+  @include media-mobilesmall_burger {
+    font-size: 1rem;
+  }
 }
 
 p {
