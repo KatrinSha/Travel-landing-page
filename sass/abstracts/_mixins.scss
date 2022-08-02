@@ -58,7 +58,7 @@
 }
 
 @mixin font-adaptiv_391-1440 {
-    @media (min-width: 391px) and (max-width: 1440px) {
+    @media (min-width: 391px) and (max-width: 1439px) {
         @content;
     }
 }

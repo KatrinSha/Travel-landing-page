@@ -326,6 +326,10 @@ p {
   }
 }
 
+.logo-object:focus {
+  filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+}
+
 .icon-bicycle {
   background-image: url("/assets/svg/bicycle.svg");
   width: 50px;
@@ -457,18 +461,27 @@ p {
   }
 }
 
+.slider__item:nth-child(1) {
+  background: url("/assets/img/Stone max.jpg") center center no-repeat;
+}
 @media (max-width: 390px) {
   .slider__item:nth-child(1) {
     background: url("/assets/img/Stone mini.jpg") center center no-repeat;
   }
 }
 
+.slider__item:nth-child(2) {
+  background: url("/assets/img/Gate max.jpg") center center no-repeat;
+}
 @media (max-width: 390px) {
   .slider__item:nth-child(2) {
     background: url("/assets/img/Gate min.jpg") center center no-repeat;
   }
 }
 
+.slider__item:nth-child(3) {
+  background: url("/assets/img/bridge max.jpg") center bottom no-repeat;
+}
 @media (max-width: 390px) {
   .slider__item:nth-child(3) {
     background: url("/assets/img/Bridge min.jpg") center center no-repeat;
@@ -697,6 +710,12 @@ h1 {
     font-size: 2.7rem;
   }
 }
+@media (min-width: 391px) and (max-width: 1439px) {
+  .steps h2 {
+    padding-bottom: calc(16px + 2vw);
+    padding-top: calc(8px + 5vw);
+  }
+}
 @media (max-width: 390px) {
   .steps h2 {
     font-size: 1.4rem;
@@ -769,6 +788,12 @@ h1 {
     font-size: 2.7rem;
   }
 }
+@media (min-width: 391px) and (max-width: 1439px) {
+  .destinations h2 {
+    padding-bottom: calc(16px + 2vw);
+    padding-top: calc(8px + 5vw);
+  }
+}
 @media (max-width: 390px) {
   .destinations h2 {
     font-size: 1.4rem;
@@ -789,17 +814,20 @@ h1 {
   }
 }
 
-.slider__item img {
+.slider__item {
   border-radius: 16px;
   width: 800px;
   height: 800px;
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
 }
-@media (max-width: 390px) {
-  .slider__item img {
-    display: none;
+@media (min-width: 391px) and (max-width: 1439px) {
+  .slider__item {
+    width: 50vw;
+    height: 50vw;
   }
 }
-
 @media (max-width: 390px) {
   .slider__item {
     border-radius: 16px;
@@ -814,6 +842,11 @@ h1 {
 @media (max-width: 390px) {
   .item_selected {
     margin: 0px;
+  }
+}
+@media (min-width: 391px) and (max-width: 1439px) {
+  .item_selected {
+    margin: 0 5vw;
   }
 }
 
@@ -832,9 +865,10 @@ h1 {
     transition: all ease 1s;
   }
 }
-@media (min-width: 391px) and (max-width: 1440px) {
+@media (min-width: 391px) and (max-width: 1439px) {
   .slider-line {
-    left: calc((2520px - 100vw) / 2 * -1);
+    left: -30vw;
+    height: 50vw;
   }
 }
 
@@ -842,9 +876,12 @@ h1 {
   font-size: 3.2rem;
   font-weight: 500;
   font-style: normal;
-  position: relative;
-  top: -77px;
-  left: 19px;
+  padding: 0px 0px 44px 17px;
+}
+@media (min-width: 391px) and (max-width: 1439px) {
+  .slider__item-text {
+    font-size: 2.3rem;
+  }
 }
 @media (max-width: 390px) {
   .slider__item-text {
@@ -860,6 +897,12 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 10px;
+}
+@media (min-width: 391px) and (max-width: 1439px) {
+  .slider-indicators {
+    padding-bottom: calc(16px + 2vw);
+    padding-top: calc(8px + 5vw);
+  }
 }
 @media (max-width: 390px) {
   .slider-indicators {
@@ -923,21 +966,16 @@ h1 {
   width: 14.36px;
 }
 
-svg path {
-  fill: inherit;
-  stroke: inherit;
-  stroke-width: inherit;
-}
-
-.left-slide-arrow svg {
-  fill-opacity: 0.1;
-}
-
 .stories__title {
   text-align: center;
   position: relative;
   top: -85px;
   margin-top: 91px;
+}
+@media (min-width: 391px) and (max-width: 1439px) {
+  .stories__title {
+    margin-top: calc(25px + 3.6vw);
+  }
 }
 @media (max-width: 768px) {
   .stories__title {
@@ -982,6 +1020,7 @@ svg path {
 .stories {
   background: rgba(255, 255, 255, 0.7);
   padding-bottom: 42px;
+  position: relative;
 }
 
 .stories__list {

@@ -7,7 +7,10 @@
     @include media-tablet {
         font-size: 2.7rem;
     }
-
+    @include font-adaptiv_391-1440{
+        padding-bottom: calc(16px + 2vw);
+        padding-top: calc(8px + 5vw);
+    }
     @include media-mobilesmall_burger {
         @include font(1.4rem, 500);
         line-height: 18.52px;

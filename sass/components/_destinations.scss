@@ -5,7 +5,10 @@
     @include media-tablet {
         font-size: 2.7rem;
     }
-
+    @include font-adaptiv_391-1440{
+        padding-bottom: calc(16px + 2vw);
+        padding-top: calc(8px + 5vw);
+    }
     @include media-mobilesmall_burger {
         @include font(1.4rem, 500);
         padding: 25px 0 24px 0;
@@ -23,18 +26,19 @@
 
 }
 
-.slider__item img {
+.slider__item {
     border-radius: 16px;
     width: 800px;
     height: 800px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-end;
 
-    @include media-mobilesmall_burger {
-        display: none;
+    @include font-adaptiv_391-1440 {
+        width: 50vw;
+        height: 50vw;
     }
 
-}
-
-.slider__item {
     @include media-mobilesmall_burger {
         border-radius: 16px;
         width: 360px;
@@ -47,6 +51,10 @@
 
     @include media-mobilesmall_burger {
         margin: 0px;
+    }
+
+    @include font-adaptiv_391-1440 {
+        margin: 0 5vw;
     }
 }
 
@@ -65,8 +73,8 @@
     }
 
     @include font-adaptiv_391-1440 {
-        $slider-width: calc((2520px - 100vw)/2*(-1));
-        left: $slider-width;
+        left: -30vw;
+        height: 50vw;
     }
 }
 
@@ -74,10 +82,10 @@
 .slider__item-text {
     @extend %font-family-add;
     @include font(3.2rem, 500);
-    position: relative;
-    top: -77px;
-    left: 19px;
-
+    padding: 0px 0px 44px 17px;
+    @include font-adaptiv_391-1440 {
+      font-size: 2.3rem;;
+    }
     @include media-mobilesmall_burger {
         font-size: 2rem;
         top: 11px;
@@ -91,7 +99,10 @@
     display: flex;
     justify-content: center;
     gap: 10px;
-
+    @include font-adaptiv_391-1440 {
+        padding-bottom: calc(16px + 2vw);
+        padding-top: calc(8px + 5vw);
+      }
     @include media-mobilesmall_burger {
         position: relative;
         padding: 0px;
@@ -113,51 +124,40 @@
     }
 }
 
-.indicators_selected{
+.indicators_selected {
     background-color: $color-main-light;
 }
 
 .destinations {
     padding-bottom: 80px;
-
+  
     @include media-mobilesmall_burger {
         padding-bottom: 10px;
     }
 }
+
 .destinations {
     position: relative;
 }
+
 .slader-arrow {
     display: none;
 
     @include media-mobilesmall_burger {
-       position: absolute;
-       left:26px;
-       top:153px;
-       z-index: 12;
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       height: 30px;
-       width:337px;
+        position: absolute;
+        left: 26px;
+        top: 153px;
+        z-index: 12;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        width: 337px;
     }
 }
-.arrow{
-   height: 24.94px;
-   width: 14.36px;  
 
-}
+.arrow {
+    height: 24.94px;
+    width: 14.36px;
 
-
-
-
-
-svg path {
-    fill: inherit;
-    stroke: inherit;
-    stroke-width: inherit;
-}
-
-.left-slide-arrow svg {
-    fill-opacity: 0.1;
 }

@@ -26,16 +26,19 @@
     }
 }
 .slider__item:nth-child(1){
+    background: url("/assets/img/Stone max.jpg") center center no-repeat;
     @include media-mobilesmall_burger{
         background: url("/assets/img/Stone\ mini.jpg") center center no-repeat;
     }
 }
 .slider__item:nth-child(2){
+    background: url("/assets/img/Gate max.jpg") center center no-repeat;
     @include media-mobilesmall_burger{
         background: url("/assets/img/Gate min.jpg") center center no-repeat;
     }
 }
 .slider__item:nth-child(3){
+    background: url("/assets/img/bridge\ max.jpg") center bottom no-repeat;
     @include media-mobilesmall_burger{
         background: url("/assets/img/Bridge min.jpg") center center no-repeat;
     }

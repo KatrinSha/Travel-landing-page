@@ -3,6 +3,9 @@
     position: relative;
     top: -85px;
     margin-top: 91px;
+    @include font-adaptiv_391-1440 {
+        margin-top: calc(25px + 3.6vw);
+    }
     @include media-tablet {
         font-size: 2.7rem;
     }
@@ -35,6 +38,7 @@
 .stories {
     background: rgba(255, 255, 255, 0.7);
     padding-bottom: 42px;
+    position: relative;
 
 }
 
